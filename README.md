@@ -1,6 +1,6 @@
 ## Brief
-基于openVINO + MTCNN
-本代码实现了在模拟Pnet输出的情况下,正常运行Rnet & Onet
+基于openVINO + MTCNN  
+本代码实现了在模拟Pnet输出的情况下,正常运行Rnet & Onet  
 PS: [openVINO-git](https://github.com/openvinotoolkit/dldt)
 
 ## Prepare
@@ -24,7 +24,7 @@ python mo_caffe.py --input_model model/mtcnn/det3.caffemodel --mean_values [127.
 ```
 
 ## Important!!!
-一些pretrained的mtcnn-caffe模型在训练时,使用的人脸图像是经过转置的,即正脸逆时针旋转90度
+一些pretrained的mtcnn-caffe模型在训练时,使用的人脸图像是经过转置的,即正脸逆时针旋转90度  
 所以在使用基于此类模型转换的openVINO模型时,同样需要对输入图像进行转置操作
 
 ## Specially
