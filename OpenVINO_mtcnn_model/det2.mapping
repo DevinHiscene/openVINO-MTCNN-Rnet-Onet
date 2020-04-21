@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="prelu4" out_port_id="conv4"/>
+		<IR id="34" name="conv5-2/flatten_fc_input" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="data" out_port_id="data"/>
+		<IR id="4" name="Add_/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="pool2" out_port_id="pool2"/>
+		<IR id="18" name="pool2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="prelu2" out_port_id="conv2"/>
+		<IR id="17" name="prelu2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="prelu4" out_port_id="conv4"/>
+		<IR id="41" name="conv5-1/flatten_fc_input" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv4" out_port_id="conv4"/>
+		<IR id="30" name="conv4" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv5-2" out_port_id="0"/>
+		<IR id="38" name="conv5-2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="prelu1" out_port_id="conv1"/>
+		<IR id="10" name="prelu1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2" out_port_id="conv2"/>
+		<IR id="15" name="conv2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv3" out_port_id="conv3"/>
+		<IR id="22" name="conv3" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="prob1" out_port_id="0"/>
+		<IR id="46" name="prob1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="pool1" out_port_id="pool1"/>
+		<IR id="11" name="pool1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="prelu3" out_port_id="conv3"/>
+		<IR id="26" name="conv4/flatten_fc_input" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv5-1" out_port_id="conv5-1"/>
+		<IR id="45" name="conv5-1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv1" out_port_id="conv1"/>
+		<IR id="8" name="conv1" out_port_id="2"/>
+	</map>
+</mapping>
