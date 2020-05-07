@@ -18,7 +18,7 @@ PS: [openVINO-git](https://github.com/openvinotoolkit/dldt)
 ```
 
 ## How to change MTCNN model from caffe to openVINO?
-Pay attention of mean and std values settings~
+[Pay attention of mean and std values settings~](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_Converting_Model_General.html#when_to_specify_mean_and_scale_values)
 ```
 python mo_caffe.py --input_model model/mtcnn/det3.caffemodel --mean_values [127.5,127.5,127.5] --scale_values [127.5,127.5,127.5] --output_dir model/mtcnn/
 ```
